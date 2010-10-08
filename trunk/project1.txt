@@ -1,0 +1,24 @@
+Project 1 Individual Written Questions
+
+Name: Yohannes M Himawan
+Email Address: yohannes.marcell@gmail.com
+
+1. We need to connect those vertices by using the openGL functions. Make sure we can connect those vertices into a triangle or quadrilateral or any polygonal shape so we need to change the structure and the ordering of the vertices if it doesn't make sense. We need a stack as an additional data structures to make sure we use all the vertices in the array. And then we change the original arrays accordingly from that stack. The vertices must be ordered in counter-clockwise encirclement otherwise it will not make a shape. We can also just make an edge list of the shape itself so the shared edges won't get drawn twice. 
+
+2. 4 modes: GL_MODELVIEW GL_PROJECTION, GL_TEXTURE, GL_COLOR
+  -GL_MODELVIEW is for matrix operations of the modelview matrix stack  
+  -GL_PROJECTION is for matrix operations of the projection matrix stack  
+  -GL_TEXTURE is for matrix operations of the texture matrix stack  
+  -GL_COLOR is for matrix operations of the color matrix stack  
+
+
+3. You need 3 different viewports in that window and divide it accordingly probably by 1/4 of the width and height of the windows to make it only take 1/4 of the windows. and then use the function glRotatef and rotate it 180 degree about the y axis to get the side view and then 180 degree about the x axis on the 3rd viewport to view the top view. This would not affect the viewing frustum that much if we don't intend to change it. 
+
+4.GLUT stands for GL Utility Toolkit. Because OpenGL is truly windows system platform independent we use GLUT as a simple windowing application interface. Without GLUT we can't see what we render on the screen with just OpenGL itself. The other windowing system are Xwindows on linux or the Microsoft own window system and those are a little bit more complicated than GLUT. 
+
+5. We only want to use a single frame buffer only if we don't have enough memory or CPU power to support a double frame buffer. Double buffering would produce less flicker, tearing and other artifacts on the display screen because we can pre-render the scene in the second buffer. Most computers would be able to do double buffering nowadays though so there usually no reason not to do double buffering except you are doing like a very high resolution image. 
+
+6.We can use x = m^(-1)*(y-b) when m > 1
+  so that we don't have a problem of dividing by zero when we have vertical lines. and also we won't have gaps for lines with slope greater than 1. 
+
+Answers found from the books, wikipedia, the slides, and openGL websites

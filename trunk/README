@@ -1,0 +1,29 @@
+/*
+ * README
+ * ------
+ * Put the results of the Performance Test here.  Also, include the names
+ * of your team members and any special instructions for compiling, etc.,
+ * if you did something besides the standard Makefile.
+ *
+ * Group Members: Yohannes Himawan
+                  David Lee
+ */
+ Tests Results:
+ Display mode:        Time:
+ 1 Solid Cube glut    4.05 s
+   Wire Cube glut     3.71 s
+ 2 cube quad          4.06 s
+ 3 cube quad arr      3.77 s
+ 4 solid cone glut    4.05 s
+   wire cone glut     3.86 s
+ 5 cone tri           3.71 s
+ 6 cone tri arr       3.89 s
+ 7 cone calc tri      3.79 s
+
+ Questions:
+ 1. Which display mode run the fastest? 
+    Wire cube glut and cone triangles run the fastest. 
+ 2. Which display mode run the slowest?
+    cube using quadrilaterals run the slowest 
+ 3. Explain the running times!
+    We think that Solid objects would take longer to render since we need to color and raster more pixels on the screen. Polygons should take more time to render than just simple line loops. 
